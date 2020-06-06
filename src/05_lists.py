@@ -7,7 +7,7 @@ y = [8, 9, 10]
 # For the following, DO NOT USE AN ASSIGNMENT (=).
 
 # Change x so that it is [1, 2, 3, 4]
-# YOUR CODE HERE
+# YOUR CODE HEREl
 x.append(4)
 print(x)
 
@@ -19,10 +19,12 @@ print(x)
 
 # Change x so that it is [1, 2, 3, 4, 9, 10]
 # YOUR CODE HERE
+x.remove(8)
 print(x)
 
 # Change x so that it is [1, 2, 3, 4, 9, 99, 10]
 # YOUR CODE HERE
+x.insert(-1,99)
 print(x)
 
 # Print the length of list x
