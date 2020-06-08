@@ -32,5 +32,4 @@ def outer():
     # Note: Google "python nested function scope".
     print(y)
 
-
 outer()
