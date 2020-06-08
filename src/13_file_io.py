@@ -10,6 +10,11 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 # Note: pay close attention to your current directory when trying to open "foo.txt"
 
 # YOUR CODE HERE
+# ~/documents/code/CS/part1/Intro-Python/src/foo.txt
+read_file = open(r"src/foo.txt", "r")
+# read_file.read()
+print(read_file.read())
+read_file.close() 
 
 # Open up a file called "bar.txt" (which doesn't exist yet) for
 # writing. Write three lines of arbitrary content to that file,
@@ -17,3 +22,8 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 # sure that it contains what you expect it to contain
 
 # YOUR CODE HERE
+write_file = open("src/bar.txt", "w")
+text = input('Enter you text below:')
+write_file.write(text)
+
+write_file.close()

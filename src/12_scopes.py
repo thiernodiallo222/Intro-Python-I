@@ -5,11 +5,13 @@
 x = 12
 
 def change_x():
+    global x
     x = 99
 
 change_x()
 
 # This prints 12. What do we have to modify in change_x() to get it to print 99?
+# we should add the following about the reassignment: global x
 print(x)
 
 
@@ -19,12 +21,14 @@ def outer():
     y = 120
 
     def inner():
+        nonlocal y
         y = 999
 
     inner()
 
     # This prints 120. What do we have to change in inner() to get it to print
     # 999?
+    # we should add the following above the assignment y =99: nonlocal y
     # Note: Google "python nested function scope".
     print(y)
 
